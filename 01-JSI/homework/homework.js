@@ -67,13 +67,13 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
-
+return Math.pow (num , 2)
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-
+return Math.pow (num , exponent)
 }
 
 function esPositivo(numero) {
@@ -81,14 +81,20 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+if (numero > 0) {
+  return "Es positivo";
+} else if (numero < 0) {
+  return "Es negativo";
+} else {
+  return false;
+}
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+return nombre + " " + apellido
 }
 
 function retornarPerimetro(lado){
