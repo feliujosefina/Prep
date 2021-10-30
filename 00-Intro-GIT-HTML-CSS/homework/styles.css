@@ -1,0 +1,22 @@
+h1 {
+    color: rosybrown;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    height: 800px;
+    width: 500px;
+    background-color: tan;
+    padding: 50px;
+    border: 1px solid sienna; 
+}
+#spanId {
+    font-size: 25px;
+    margin: 50px;
+}
+title {
+    background-color: tan;
+    font-style: normal;
+    color: thistle;
+}
