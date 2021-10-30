@@ -1,5 +1,7 @@
 h1 {
-    color: rosybrown;
+    background-color: tan;
+    font-style: normal;
+    color: thistle;
 }
 img {
     width: 400px;
@@ -14,9 +16,4 @@ img {
 #spanId {
     font-size: 25px;
     margin: 50px;
-}
-h1 {
-    background-color: tan;
-    font-style: normal;
-    color: thistle;
 }
