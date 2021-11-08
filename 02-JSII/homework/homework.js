@@ -64,7 +64,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-
+var max = numeros[0];
+for (let index = 0; index < numeros.length; index++) {
+  if (numeros[index] > max) {
+    max = numeros[index]
+  };
+}
+return max
 }
 
 function multiplicarArgumentos() {
