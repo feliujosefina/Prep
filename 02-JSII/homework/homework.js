@@ -30,14 +30,23 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-
+var frase = palabras[0]
+for (let index = 1; index < palabras.length; index++) {
+  frase = frase + " " + palabras[index];
+}
+return frase
 }
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-
+for (let index = 0; index < array.length; index++) {
+  if (array[index] === elemento) {
+    return true
+  };
+}
+return false
 }
 
 function promedioResultadosTest(resultadosTest) {
