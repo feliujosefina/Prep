@@ -77,7 +77,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
+if (arguments.length === 0) {
+  return 0
+}
+var multiplicacion = 1;
+for (let index = 0; index < arguments.length; index++) {
+  multiplicacion = multiplicacion * arguments[index];
+}
+return multiplicacion
 }
 
 function cuentoElementos(arreglo){
@@ -98,7 +105,14 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+  var mesesEncontrados = [];
+  for (var index = 0; index < array.length; index++) {
+    if(array[index] === 'Enero' || array[index] === 'Marzo' || array[index] === 'Noviembre') {
+      mesesEncontrados.push(array[index]);
+    }
+  }
+  if(mesesEncontrados.length < 3) return 'No se encontraron los meses pedidos';
+  return mesesEncontrados;
 }
 
 function breakStatement(numero) {
