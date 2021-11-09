@@ -90,14 +90,26 @@ return multiplicacion
 function cuentoElementos(arreglo){
   // Realiza una función que retorne la cantidad de los elementos del arreglo que sean mayores a 18.
   // Tu código:
-
+  var count = 0;
+  for (var index = 0; index < arreglo.length; index++) {
+    if(arreglo[index] > 18) {
+      count++;
+    }
+  }
+  return count;
 }
 
 function todosIguales(arreglo) {
   // Escriba la función todosIguales, si todos los elementos de un arreglo son iguales
   // retornar true, caso contrario retornar false.
   // Tu código:
-  
+  var elementoDeComparacion = arreglo[0]
+  for (let index = 1; index < arreglo.length; index++) {
+    if (arreglo[index] !== elementoDeComparacion) {
+      return false
+    };
+  }
+  return true
 } 
 
 function mesesDelAño(array) {
