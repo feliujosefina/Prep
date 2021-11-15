@@ -135,7 +135,13 @@ function breakStatement(numero) {
   // devolver: "Se interrumpió la ejecución"
   // Pista: usá el statement 'break'
   // Tu código:
-
+var results = []
+  for (var i = 0; i < 10; i++) {
+  if ( i === numero) return "Se interrumpió la ejecución";
+    numero = numero + 2;
+    results.push(numero);
+  }
+  return results
 }
 
 function continueStatement(numero) {
@@ -146,8 +152,17 @@ function continueStatement(numero) {
   // y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
+  var results = []
+  for (var i = 0; i < 10; i++) {
+    if (i === 5) continue;
+    numero = numero + 2;
+    results.push(numero);
+  }
+  return results
+} 
   
-}
+
+
 
 function crearGato(nombre, edad) {
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
